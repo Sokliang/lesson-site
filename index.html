@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim Your $100 Player Bonus!</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Add Google Translate styles -->
+  <style>
+    /* Hide Google Translate branding bar */
+    .goog-te-banner-frame.skiptranslate { display: none !important; }
+    body { top: 0px !important; } /* Fix potential top margin issue */
+    /* Style the dropdown */
+    #google_translate_element select {
+        background-color: #f8f9f9;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px 8px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* Position the widget */
+    #google_translate_element {
+        position: fixed; /* Keep it visible on scroll */
+        top: 15px;
+        right: 15px;
+        z-index: 10000; /* Ensure it's above other content */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: slight background */
+        padding: 5px;
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Google Translate Widget Placeholder -->
+  <div id="google_translate_element"></div>
+
+  <!-- Page 1: Bait -->
+  <div class="container" id="page1">
+    <h1><span class="flash">💰 $100 PLAYER BONUS - CLAIM NOW! 💰</span></h1>
+    <h2>Congratulations, Player! You've Unlocked a Bonus!</h2>
+    <p>Our system has detected eligibility for a <strong>$100 bonus</strong> linked to your current session! This exclusive offer is available for a limited time only.</p>
+    <p>To receive your bonus, simply complete the quick tutorial and multi-step confirmation process.</p>
+    <div class="timer" id="main-timer">Offer Expires In: 25:00</div>
+    <button class="fake-button" onclick="showPage('page2')">Begin Confirmation Process</button>
+    <p class="progress-indicator">Step 1 of 9</p>
+  </div>
+
+  <!-- Page 2: T&C Agreement -->
+  <div class="container" id="page2">
+      <h2>Step 2: Terms Agreement</h2>
+      <p>Please review and agree to the standard promotional terms and conditions before proceeding.</p>
+      <div class="terms-box">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Promotional value is non-transferable and has no cash alternative. Eligibility determined by system criteria. Standard data rates may apply. User agrees to receive related communications. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Participation constitutes agreement to these terms. We reserve the right to modify or cancel this promotion at any time. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur.
+      </div>
+      <label>
+          <input type="checkbox" id="termsCheckbox"> I have read and agree to the Terms and Conditions.
+      </label>
+      <button class="fake-button" id="termsButton" onclick="showPage('page3')" disabled>Accept Terms & Continue</button>
+      <p class="progress-indicator">Step 2 of 9</p>
+  </div>
+
+  <!-- Page 3: Fake Captcha -->
+  <div class="container" id="page3">
+      <h2>Step 3: Security Verification</h2>
+      <p>To prevent automated submissions, please complete the security check below.</p>
+      <div class="captcha-box">
+          <p>Enter the characters shown below:</p>
+          <div class="captcha-code" id="captchaCode">WzX7R9</div>
+          <input type="text" id="captchaInput" placeholder="Enter code here" style="margin-top: 10px; width: 80%; text-align: center; font-size: 1.1em;">
+      </div>
+      <button class="fake-button" onclick="verifyCaptcha()">Verify Security Code</button>
+      <p class="progress-indicator">Step 3 of 9</p>
+      <p id="captchaError" style="color: red; text-align: center; display: none;">Incorrect code. Please try again.</p>
+  </div>
+
+  <!-- Chapter 1 -->
+  <div class="container" id="chapter1">
+    <h2>Chapter 1: The Bait is Set... But Who's Biting?</h2>
+    <p><strong>Welcome, Player!</strong> You’re here to win $100, right? Great. Before the payout, please review this mandatory quick tutorial regarding offer validation.</p>
+    <h3>Level 1: Why Did *You* Click?</h3>
+    <p>Let's be honest. You probably clicked because it promised easy money, fast. Common triggers include:</p>
+    <ul>
+      <li><strong>Urgency:</strong> "Limited Time!" – Creates pressure to act without thinking.</li>
+      <li><strong>High Reward, Low Effort:</strong> "$100 Bonus!" – Appeals to the desire for a quick win.</li>
+      <li><strong>Exclusivity/Selection:</strong> "You've Unlocked!" – Makes it feel special or deserved.</li>
+    </ul>
+    <p>These aren't just sales tactics; they're psychological levers. They work by activating your brain's 'Fast Mode'.</p>
+
+    <h3>Level 2: Fast Mode vs. Slow Mode Thinking</h3>
+    <ul>
+      <li><strong>Fast Mode:</strong> Instinctive, emotional, jumps at opportunities. *Crucial for scammers to exploit in others.*</li>
+      <li><strong>Slow Mode:</strong> Analytical, questioning, weighs risks and rewards. *The mode you need to engage right now.*</li>
+    </ul>
+    <p>Think about it: The same 'Fast Mode' triggers used *on* potential victims are often what draw people into believing these schemes *or even perpetrating them* in the first place. You're here now, engaging Slow Mode. Good.</p>
+
+    <h3>Level 3: The "Just Maybe" Trap</h3>
+    <p>That little voice saying, "But what if this *one* time it's real?" It's powerful. It keeps people clicking, hoping, trying.</p>
+    <ul>
+        <li>What if this is the easy score?</li>
+        <li>What if I miss out?</li>
+    </ul>
+    <p>Now, flip it with Slow Mode thinking:</p>
+    <blockquote>What if the *real* trap isn't losing money, but losing *time* chasing illusions? What if the person clicking... is you, falling for your own kind of bait?</blockquote>
+
+    <div class="congrats-message">
+        Tutorial Module 1 Complete!
+        <br>...Or did you just scroll down looking for the button?
+    </div>
+    <div class="hint">
+        <strong>Hint:</strong> The only jackpot here is critical thinking. Keep going.
+    </div>
+    <div class="page-timer" id="timer-chapter1">Review Time Remaining: 01:00</div>
+    <button class="fake-button" id="button-chapter1" onclick="showPage('page5')" disabled>Proceed to Next Step</button>
+    <p class="progress-indicator">Step 4 of 9</p>
+  </div>
+
+  <!-- Page 5: Risk Assessment -->
+  <div class="container" id="page5">
+      <h2>Step 5: User Profile Assessment</h2>
+      <p>Please answer these quick questions to help us tailor future offers (Optional, but speeds up processing).</p>
+      <form id="riskForm">
+          <p><strong>1. How often do you participate in online promotions?</strong></p>
+          <label><input type="radio" name="q1" value="a"> Frequently</label>
+          <label><input type="radio" name="q1" value="b"> Occasionally</label>
+          <label><input type="radio" name="q1" value="c"> Rarely</label>
+
+          <p><strong>2. What is your primary interest online?</strong></p>
+          <label><input type="radio" name="q2" value="a"> Entertainment</label>
+          <label><input type="radio" name="q2" value="b"> Information</label>
+          <label><input type="radio" name="q2" value="c"> Shopping</label>
+          <label><input type="radio" name="q2" value="d"> Socializing</label>
+
+          <p><strong>3. Familiarity with digital rewards?</strong></p>
+          <label><input type="radio" name="q3" value="a"> Very Familiar</label>
+          <label><input type="radio" name="q3" value="b"> Somewhat Familiar</label>
+          <label><input type="radio" name="q3" value="c"> Not Familiar</label>
+      </form>
+      <button class="fake-button" onclick="showLoading('chapter2', 1500)">Submit Assessment</button>
+      <p class="progress-indicator">Step 5 of 9</p>
+  </div>
+
+  <!-- Chapter 2 -->
+  <div class="container" id="chapter2">
+    <h2>Chapter 2: Pulling the Strings – The Mechanics of Deception</h2>
+    <p>Still here? Excellent. This indicates commitment—either to the bonus or to understanding the process. Welcome to the next module.</p>
+    <h3>Level 1: The Confidence Game</h3>
+    <p>Nobody thinks *they'll* be the fool. The illusion of control is strong. But effective scams don't rely on victims being unintelligent, just:</p>
+    <ul>
+      <li><strong>Distracted:</strong> Overwhelmed by urgency or emotion.</li>
+      <li><strong>Trusting:</strong> Exploiting fake authority (logos, official-sounding language).</li>
+      <li><strong>Pressured:</strong> Using time limits or threats ("account closure," "legal action").</li>
+    </ul>
+    <p>Recognize these tools? They are the building blocks of manipulation, used repeatedly because they bypass critical thought.</p>
+
+    <h3>Level 2: The Real Transaction</h3>
+    <p>In many online schemes, the target isn't just the money. It's the *person*:</p>
+    <ul>
+        <li>Their <strong>attention</strong> is monetized (clicks, engagement).</li>
+        <li>Their <strong>information</strong> is valuable (personal details, logins).</li>
+        <li>Their <strong>trust</strong> is the resource being exploited.</li>
+    </ul>
+    <p>Think about the process: Keeping someone hooked, believing the lie, investing their time and emotion... that's the core mechanism. Whether you're the one clicking or the one *making* others click, understanding this flow is key.</p>
+
+    <div class="minigame">
+        <h4>Mini Game: Spot the Red Flag</h4>
+        <p>Which of these common online phrases often signals a need for extra caution?</p>
+        <ol>
+            <li>“Verify your identity now to receive funds.”</li>
+            <li>“Click this urgent link to fix your account.”</li>
+            <li>“You’ve been randomly selected for a prize.”</li>
+            <li>All of the above require careful verification.</li>
+        </ol>
+        <blockquote>If you saw red flags in all of them – good. Recognizing these tactics is Step 1. Avoiding falling for them, <em>or using them</em>, requires constant vigilance and ethical consideration. You just leveled up your awareness.</blockquote>
+    </div>
+    <div class="congrats-message">
+        Congrats Again! Module 2 Complete!
+        <br>You’re thinking critically now. That’s valuable… for you.
+    </div>
+    <div class="page-timer" id="timer-chapter2">Review Time Remaining: 01:15</div>
+    <button class="fake-button" id="button-chapter2" onclick="showPage('page7')" disabled>Proceed to Bonus Round</button>
+    <p class="progress-indicator">Step 6 of 9</p>
+  </div>
+
+  <!-- Page 7: Bonus Multiplier -->
+  <div class="container" id="page7">
+      <h2>Step 7: Optional Bonus Multiplier!</h2>
+      <p>Feeling lucky? Take a spin for a chance to multiply your $100 bonus!</p>
+      <div class="bonus-multiplier">
+          <h4>Spin the Wheel!</h4>
+          <button id="spinButton" onclick="spinMultiplier()">SPIN!</button>
+          <div id="multiplierResult" style="display: none;"></div>
+      </div>
+      <button class="fake-button" id="bonusContinueButton" onclick="showLoading('chapter3', 2000)" disabled>Continue to Final Module</button>
+      <p class="progress-indicator">Step 7 of 9</p>
+  </div>
+
+  <!-- Chapter 3 -->
+  <div class="container" id="chapter3">
+    <h2>Chapter 3: The Mirror - Looking at Your Own Game</h2>
+    <p>This final module isn't just about online offers. It’s about user motivation and choices.</p>
+    <h3>Level 1: Why This Path?</h3>
+    <p>Why engage with systems like this? Maybe...</p>
+    <ul>
+        <li>You enjoy outsmarting systems or finding loopholes.</li>
+        <li>You believe it's a fast track to money you need or want.</li>
+        <li>You feel it's the only option available.</li>
+    </ul>
+    <p>Now, use that Slow Mode thinking again:</p>
+    <blockquote>Is this *really* the smartest use of your ingenuity? Is the quick gain worth the constant risk, the stress, the potential harm caused (even if indirectly), and the dead-end nature of it?</blockquote>
+    <p>Deception requires skill, but it's a skill applied to a foundation of instability and negativity.</p>
+
+    <h3>Level 2: Flipping the Script - Building vs. Breaking</h3>
+    <p>Imagine redirecting that same energy, focus, and time:</p>
+    <ul>
+      <li><strong>Learn Marketable Skills:</strong> Coding, design, writing, digital marketing, trade skills – things people *pay* for legitimately. Resources online are abundant, many free.</li>
+      <li><strong>Create Real Value:</strong> Build a simple website, offer a service locally, start a small e-commerce venture, create content. Even small beginnings build momentum.</li>
+      <li><strong>Network Constructively:</strong> Use communication skills to build genuine connections, not just manipulate transactions.</li>
+    </ul>
+    <p>It might seem slower, harder. But it leads somewhere *stable*. It builds something *you own*.</p>
+
+    <h3>Level 3: The Choice</h3>
+    <p>Ultimately, it comes down to this:</p>
+    <blockquote>You can spend your time trying to exploit flawed systems and other people's vulnerabilities for short-term gains that evaporate... or you can invest that same time building skills and creating genuine value for long-term stability and self-respect.</blockquote>
+    <p>The "easy money" path often costs far more in the long run – in time, reputation, and peace of mind. Choosing the constructive path, even if challenging, is the smarter play.</p>
+
+    <div class="congrats-message">
+        Congratulations, Final Level Player!
+        <br>You reached the end of the tutorial. There’s no hidden jackpot here. No flashy payout. Just this information.
+        <br>But if you genuinely engaged with it… you've gained something more valuable.
+    </div>
+    <div class="page-timer" id="timer-chapter3">Review Time Remaining: 01:30</div>
+    <button class="fake-button" id="button-chapter3" onclick="showPage('page9')" disabled>Complete Tutorial & Review</button>
+    <p class="progress-indicator">Step 8 of 9</p>
+  </div>
+
+  <!-- Page 9: Final Review -->
+   <div class="container" id="page9">
+      <h2>Step 9: Final Review</h2>
+      <p>Thank you for completing all the necessary steps and information modules.</p>
+      <p>Summary:</p>
+      <ul>
+          <li>Initial Bonus Value: $100</li>
+          <li>Bonus Multiplier Applied: <span id="reviewMultiplier">1x</span></li>
+          <li><strong>Final Bonus Amount: <span id="reviewFinalAmount">$100</span></strong></li>
+          <li>Status: Ready for Final Confirmation</li>
+      </ul>
+      <p>Please proceed to the final confirmation step to claim your allocated bonus.</p>
+      <button class="fake-button" onclick="showPage('finalConfirm')">Proceed to Final Confirmation</button>
+      <p class="progress-indicator">Step 9 of 9</p>
+   </div>
+
+
+   <!-- Page: Final Confirmation -->
+  <div class="container" id="finalConfirm">
+    <h2>Final Step: Confirmation</h2>
+    <p>Please enter the confirmation code 'FINALIZE' to release your bonus payment process.</p>
+    <label for="humanCheck">Enter Confirmation Code:</label>
+    <input type="text" id="humanCheck" name="humanCheck" placeholder="Type FINALIZE">
+    <p class="note">This confirms you have completed all prior steps and triggers the secure release protocol.</p>
+    <button class="fake-button" onclick="verifyFinalCode()">Submit and Claim My Bonus!</button>
+     <p id="finalCodeError" style="color: red; text-align: center; display: none;">Incorrect code. Please enter 'FINALIZE'.</p>
+     <p class="progress-indicator">Final Step</p>
+  </div>
+
+
+  <!-- Loading Indicator Page -->
+  <div class="container" id="loading">
+    <div class="loading-indicator">
+      <h2 id="loading-header">Processing...</h2>
+      <div class="spinner"></div>
+      <p id="loading-message">Validating...</p>
+      <p style="font-size: 0.9em; color: #777;" id="loading-status">Status: Please wait...</p>
+    </div>
+  </div>
+
+  <!-- Warning Page (Prank) -->
+  <div id="warning" class="warning-screen"></div>
+
+  <script src="script.js"></script>
+
+  <!-- Google Translate Initialization -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,km', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>

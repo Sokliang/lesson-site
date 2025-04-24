@@ -1,0 +1,44 @@
+/* CSS Styles */
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; color: #333; }
+    .container { max-width: 780px; margin: 20px auto; background: white; padding: 35px; box-shadow: 0 3px 10px rgba(0,0,0,0.15); border-radius: 8px; border: 1px solid #ccc; display: none; }
+    #page1 { display: block; }
+    h1, h2, h3 { color: #c0392b; text-align: center; margin-bottom: 25px; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.6em; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
+    h3 { font-size: 1.3em; color: #2980b9; margin-top: 25px; margin-bottom: 15px; text-align: left; border-left: 4px solid #2980b9; padding-left: 10px; }
+    p { line-height: 1.7; margin-bottom: 18px; text-align: left; }
+    ul { list-style: disc; margin-left: 25px; margin-bottom: 18px; }
+    blockquote { border-left: 4px solid #e74c3c; margin: 20px 10px; padding: 10px 20px; background-color: #fdf2e9; font-style: italic; font-size: 1.1em; color: #a04000; }
+    .congrats-message { border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc; padding: 15px 0; margin: 30px 0; text-align: center; font-weight: bold; color: #27ae60; }
+    .hint { background-color: #f8f9f9; border: 1px solid #d5dbdb; padding: 10px 15px; border-radius: 4px; font-size: 0.95em; color: #566573; margin-top: 15px; }
+    .minigame { background-color: #eafaf1; border: 1px solid #a3e4d7; padding: 20px; margin: 25px 0; border-radius: 5px; }
+    .minigame h4 { margin-top: 0; text-align: center; color: #1e8449; }
+    .fake-button { display: block; width: 60%; margin: 30px auto; background-color: #27ae60; color: white !important; padding: 15px 22px; border-radius: 5px; text-decoration: none; text-align: center; font-size: 1.2em; font-weight: bold; border: none; cursor: pointer; transition: background-color 0.3s ease, transform 0.1s ease; }
+    .fake-button:hover:not(:disabled) { background-color: #2ecc71; transform: scale(1.03); }
+    .fake-button:active:not(:disabled) { transform: scale(0.97); }
+    .fake-button:disabled { background-color: #bdc3c7; cursor: not-allowed; opacity: 0.7; }
+    .timer { font-size: 1.7em; color: #c0392b; font-weight: bold; text-align: center; margin: 20px 0; background-color: #fef9e7; padding: 12px; border-radius: 5px; border: 1px solid #f7dc6f; }
+    .page-timer { display: block; text-align: center; font-size: 1.1em; color: #c0392b; margin-top: 25px; font-weight: bold; background-color: #f5f5f5; padding: 8px; border: 1px dashed #aaa; }
+    .loading-indicator { text-align: center; padding: 50px; font-size: 1.3em; color: #555; }
+    .spinner { border: 5px solid #f3f3f3; border-top: 5px solid #3498db; border-radius: 50%; width: 40px; height: 40px; animation: spin 1.2s linear infinite; margin: 15px auto; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    .warning-screen { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000000; color: #00ff00; font-size: 1.1rem; font-family: 'Courier New', Courier, monospace; padding: 20px; overflow-y: scroll; z-index: 9999; white-space: pre-wrap; box-sizing: border-box; }
+    .warning-line { display: block; margin-bottom: 5px; }
+    .warning-highlight { color: #ff0000; font-weight: bold; animation: blink 1s step-end infinite; }
+    .warning-dim { color: #008800; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .flash { animation: flash 1.5s linear infinite; }
+    @keyframes flash { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+    .terms-box { height: 100px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; margin-bottom: 15px; background-color: #f9f9f9; font-size: 0.8em; color: #555; }
+    .captcha-box { border: 1px dashed #aaa; padding: 15px; text-align: center; margin: 20px auto; background-color: #eee; width: 250px; }
+    .captcha-code { font-family: monospace; font-size: 1.8em; letter-spacing: 5px; color: #555; user-select: none; }
+    input[type="text"], input[type="radio"] { margin-bottom: 10px; padding: 8px; border: 1px solid #ccc; border-radius: 3px; }
+    input[type="checkbox"] { margin-right: 5px; vertical-align: middle;}
+    label { margin-right: 15px; display: inline-block; vertical-align: middle; }
+    .progress-indicator { font-size: 0.85em; text-align: center; color: #777; margin-top: 20px; }
+    .bonus-multiplier { text-align: center; padding: 20px; border: 2px solid #f1c40f; background-color: #fef9e7; border-radius: 5px; margin: 20px 0; }
+    .bonus-multiplier button { width: auto; padding: 10px 25px; font-size: 1.1em; background-color: #f39c12; border: none; color: white; border-radius: 4px; cursor: pointer; }
+    .bonus-multiplier button:hover:not(:disabled) { background-color: #e67e22; }
+    .bonus-multiplier button:disabled { background-color: #f5d76e; cursor: not-allowed; }
+    #multiplierResult { margin-top: 15px; font-size: 1.2em; font-weight: bold; color: #27ae60; }
+    .note { background-color: #eaf2f8; border: 1px solid #aed6f1; color: #2c3e50; padding: 15px; border-radius: 4px; font-style: italic; margin-top: 20px; }
